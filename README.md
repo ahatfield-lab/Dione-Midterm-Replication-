@@ -19,4 +19,5 @@
          AfroLM model for sna
          AfroLM model for fon 
          AfroLM model for kin, ibo, sna, and fon
-         Results files
+         Config(18 config files)
+         Results files(18 results files and 18 by token type)
