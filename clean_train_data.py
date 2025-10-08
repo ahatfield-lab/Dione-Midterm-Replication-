@@ -61,6 +61,7 @@ for lang in os.listdir(input_root):
     lang_path = os.path.join(input_root, lang)
     if os.path.isdir(lang_path):
         train_file = os.path.join(lang_path, "train.txt")
+        dev_file = os.path.join(lang_path, "dev.txt")
         test_file = os.path.join(lang_path, "test.txt")
         if os.path.exists(train_file):
             df_train = pd.read_csv(os.path.join(output_root, lang, "processed_train.tsv"), sep="\t")
@@ -70,6 +71,11 @@ for lang in os.listdir(input_root):
             df_test = pd.read_csv(os.path.join(output_root, lang, "processed_test.tsv"), sep="\t")
             df_test["condition"] = lang
             all_test_dfs.append(df_test)
+        if os.path.exists(dev_file):
+            df_dev = pd.read_csv(os.path.join(output_root, lang, "processed_dev.tsv"), sep="\t")
+            df_dev["condition"] = lang
+            all_dev_dfs.append(df_dev)
+            
 if all_train_dfs:
     combined_train = pd.concat(all_train_dfs, ignore_index=True)
     combined_train.to_csv(os.path.join(output_root, "all_languages_train.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
