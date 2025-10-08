@@ -51,3 +51,28 @@ for lang in os.listdir(input_root):
             if os.path.exists(input_file):
                 output_file = os.path.join(output_root, lang, f"processed_{split.replace('.txt','.tsv')}")
                 process_file(input_file, output_file)
+
+# Create combined training and test files
+all_train_dfs = []
+all_test_dfs = []
+for lang in os.listdir(input_root):
+    lang_path = os.path.join(input_root, lang)
+    if os.path.isdir(lang_path):
+        train_file = os.path.join(lang_path, "train.txt")
+        test_file = os.path.join(lang_path, "test.txt")
+        if os.path.exists(train_file):
+            df_train = pd.read_csv(os.path.join(output_root, lang, "processed_train.tsv"), sep="\t")
+            df_train["condition"] = lang
+            all_train_dfs.append(df_train)
+        if os.path.exists(test_file):
+            df_test = pd.read_csv(os.path.join(output_root, lang, "processed_test.tsv"), sep="\t")
+            df_test["condition"] = lang
+            all_test_dfs.append(df_test)
+if all_train_dfs:
+    combined_train = pd.concat(all_train_dfs, ignore_index=True)
+    combined_train.to_csv(os.path.join(output_root, "all_languages_train.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
+    print("Saved: all_languages_train.tsv")
+if all_test_dfs:
+    combined_test = pd.concat(all_test_dfs, ignore_index=True)
+    combined_test.to_csv(os.path.join(output_root, "all_languages_test.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
+    print("Saved: all_languages_test.tsv")
