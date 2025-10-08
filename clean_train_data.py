@@ -78,13 +78,13 @@ for lang in os.listdir(input_root):
             
 if all_train_dfs:
     combined_train = pd.concat(all_train_dfs, ignore_index=True)
-    combined_train.to_csv(os.path.join(output_root, "all_languages_train.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
-    print("Saved: all_languages_train.tsv")
+    combined_train.to_csv(os.path.join(output_root, "all_languages/train.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
+    print("Saved: train.tsv")
 if all_test_dfs:
     combined_test = pd.concat(all_test_dfs, ignore_index=True)
-    combined_test.to_csv(os.path.join(output_root, "all_languages_test.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
-    print("Saved: all_languages_test.tsv")
+    combined_test.to_csv(os.path.join(output_root, "all_languages/test.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
+    print("Saved: test.tsv")
 if all_dev_dfs:
     combined_dev = pd.concat(all_dev_dfs, ignore_index=True)
-    combined_dev.to_csv(os.path.join(output_root, "all_languages_dev.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
-    print("Saved: all_languages_dev.tsv")
+    combined_dev.to_csv(os.path.join(output_root, "all_languages/dev.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
+    print("Saved: dev.tsv")
