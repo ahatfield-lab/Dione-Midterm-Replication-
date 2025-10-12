@@ -1,0 +1,2 @@
+	model	micro-precision	micro-recall	micro-f1	macro-precision	macro-recall	macro-f1	accuracy
+0	/home/ahatfield/midtermreplication/afrolm_fon_model	0.3193602476460725	0.3193602476460725	0.3193602476460725	0.17693854179059787	0.2004479218165221	0.15550623987111897	0.3193602476460725

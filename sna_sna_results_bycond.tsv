@@ -1,0 +1,2 @@
+	model	micro-precision	micro-recall	micro-f1	macro-precision	macro-recall	macro-f1	accuracy
+0	/home/ahatfield/midtermreplication/afrolm_sna_model	0.8687604798142654	0.8687604798142654	0.8687604798142654	0.7020888459575353	0.6567285704957766	0.6654014765589731	0.8687604798142654

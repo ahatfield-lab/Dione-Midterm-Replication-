@@ -1,0 +1,17 @@
+	model	target_class	precision	recall	f1
+0	/home/ahatfield/midtermreplication/afrolm_ibo_model	NOUN	0.9107555555555555	0.7074012703673018	0.7963006139737312
+1	/home/ahatfield/midtermreplication/afrolm_ibo_model	ADP	0.7707581227436823	0.8989473684210526	0.8299319727891157
+2	/home/ahatfield/midtermreplication/afrolm_ibo_model	PROPN	0.8377386196769456	0.9306688417618271	0.8817619783616693
+3	/home/ahatfield/midtermreplication/afrolm_ibo_model	VERB	0.9390211286440224	0.7778023925564909	0.8508421180176905
+4	/home/ahatfield/midtermreplication/afrolm_ibo_model	CCONJ	0.792063492063492	0.8926654740608229	0.8393608074011775
+5	/home/ahatfield/midtermreplication/afrolm_ibo_model	NUM	0.8698979591836735	0.7967289719626168	0.8317073170731707
+6	/home/ahatfield/midtermreplication/afrolm_ibo_model	PUNCT	0.9881081081081081	0.9978165938864629	0.9929386203150462
+7	/home/ahatfield/midtermreplication/afrolm_ibo_model	PRON	0.5872115020809686	0.9742623979912115	0.732766761095373
+8	/home/ahatfield/midtermreplication/afrolm_ibo_model	SCONJ	0.375	0.0037174721189591076	0.007361963190184049
+9	/home/ahatfield/midtermreplication/afrolm_ibo_model	AUX	0.3886217948717949	0.9738955823293173	0.5555555555555556
+10	/home/ahatfield/midtermreplication/afrolm_ibo_model	DET	0.5939947780678851	0.7791095890410958	0.674074074074074
+11	/home/ahatfield/midtermreplication/afrolm_ibo_model	PART	0.0	0.0	0.0
+12	/home/ahatfield/midtermreplication/afrolm_ibo_model	ADV	0.09247311827956989	0.441025641025641	0.15288888888888888
+13	/home/ahatfield/midtermreplication/afrolm_ibo_model	ADJ	0.8356940509915014	0.6197478991596639	0.7117008443908324
+14	/home/ahatfield/midtermreplication/afrolm_ibo_model	SYM	0.0	0.0	0.0
+15	/home/ahatfield/midtermreplication/afrolm_ibo_model	INTJ	0.0	0.0	0.0
