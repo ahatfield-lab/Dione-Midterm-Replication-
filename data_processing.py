@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import csv
+import os
 import json
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -18,8 +19,8 @@ def process_file(input_file, output_tsv, output_jsonl):
             line = line.strip()
             if not line:
                 if sentence:
-                    sentences.append(sentence.copy())
-                    labels.append(targets.copy())
+                    sentences.append(sentence.copy())     # ← keep as list
+                    labels.append(targets.copy())       # ← keep as list
                     sentence, targets = [], []
             else:
                 word, tag = line.split()
@@ -31,10 +32,10 @@ def process_file(input_file, output_tsv, output_jsonl):
         sentences.append(sentence.copy())
         labels.append(targets.copy())
 
-    # Save TSV with textid
+    # Save TSV (as before)
     df = pd.DataFrame({"text": [" ".join(s) for s in sentences],
                        "target": [" ".join(t) for t in labels]})
-    df.insert(0, "textid", range(1, len(df) + 1))  # Add textid starting from 1
+    df.insert(0, "textid", range(1, len(df) + 1))
     os.makedirs(os.path.dirname(output_tsv), exist_ok=True)
     df.to_csv(output_tsv, sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
 
@@ -100,6 +101,5 @@ if all_dev_dfs:
 
 if all_test_dfs:
     combined_test = pd.concat(all_test_dfs, ignore_index=True)
-    combined_test.insert(0, "textid", range(1, len(combined_test) + 1))  # Add textid for combined test
     combined_test.to_csv(os.path.join(output_root, "all_languages/test.tsv"), sep="\t", index=False, quoting=csv.QUOTE_NONE, escapechar="\\")
     print("Saved: test.tsv")
