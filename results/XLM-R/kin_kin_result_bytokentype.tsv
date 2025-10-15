@@ -1,0 +1,17 @@
+	model	target_class	precision	recall	f1
+0	../cosc426/Dione-Midterm-Replication-/XLM_kin	SYM	0.0	0.0	0.0
+1	../cosc426/Dione-Midterm-Replication-/XLM_kin	VERB	0.9183934510104886	0.948230322239831	0.9330734243014944
+2	../cosc426/Dione-Midterm-Replication-/XLM_kin	NUM	0.9645390070921985	1.0	0.9819494584837545
+3	../cosc426/Dione-Midterm-Replication-/XLM_kin	PUNCT	0.9984848484848485	1.0	0.9992418498862775
+4	../cosc426/Dione-Midterm-Replication-/XLM_kin	NOUN	0.8536376604850214	0.8418683173888576	0.8477121405298201
+5	../cosc426/Dione-Midterm-Replication-/XLM_kin	ADP	0.8646496815286624	0.97224709042077	0.9152970922882427
+6	../cosc426/Dione-Midterm-Replication-/XLM_kin	PROPN	0.7305084745762712	0.8807901907356949	0.7986411365040148
+7	../cosc426/Dione-Midterm-Replication-/XLM_kin	PRON	0.87313769751693	0.9298076923076923	0.90058207217695
+8	../cosc426/Dione-Midterm-Replication-/XLM_kin	DET	0.0	0.0	0.0
+9	../cosc426/Dione-Midterm-Replication-/XLM_kin	CCONJ	0.9459148446490219	0.9927536231884058	0.9687684148497349
+10	../cosc426/Dione-Midterm-Replication-/XLM_kin	ADJ	0.9090909090909091	0.047619047619047616	0.09049773755656108
+11	../cosc426/Dione-Midterm-Replication-/XLM_kin	ADV	1.0	0.12184873949579832	0.21722846441947566
+12	../cosc426/Dione-Midterm-Replication-/XLM_kin	SCONJ	0.9596273291925466	0.8982558139534884	0.9279279279279279
+13	../cosc426/Dione-Midterm-Replication-/XLM_kin	PART	0.0	0.0	0.0
+14	../cosc426/Dione-Midterm-Replication-/XLM_kin	AUX	0.0	0.0	0.0
+15	../cosc426/Dione-Midterm-Replication-/XLM_kin	X	0.0	0.0	0.0
