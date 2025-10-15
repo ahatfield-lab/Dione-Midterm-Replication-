@@ -1,2 +1,0 @@
-	model	micro-precision	micro-recall	micro-f1	macro-precision	macro-recall	macro-f1	accuracy
-0	../cosc426/Dione-Midterm-Replication-/XLM_fon	0.4194505352766671	0.4194505352766671	0.4194505352766671	0.24412664511749915	0.22894043624093438	0.20968724827372529	0.4194505352766671

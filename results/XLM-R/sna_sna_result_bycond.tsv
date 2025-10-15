@@ -1,2 +1,0 @@
-	model	micro-precision	micro-recall	micro-f1	macro-precision	macro-recall	macro-f1	accuracy
-0	../cosc426/Dione-Midterm-Replication-/XLM_sna	0.795111569714949	0.795111569714949	0.795111569714949	0.6475348876635431	0.5250609293827542	0.5392401810673368	0.795111569714949
