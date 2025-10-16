@@ -1,0 +1,8 @@
+Model & Train Data & ibo & kin & sna \\
+\hline
+XLM-R           & Target language                & 0.722 & 0.891 & 0.795 \\
+                & Fon                            & 0.387 & 0.442 & 0.419 \\
+                & Combined four languages        & 0.756 & 0.936 & 0.844 \\
+afrolm          & Target language                & 0.776 & 0.950 & 0.869 \\
+                & Fon                            & 0.318 & 0.357 & 0.319 \\
+                & Combined four languages        & 0.778 & 0.969 & 0.885 \\
