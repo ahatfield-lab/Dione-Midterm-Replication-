@@ -1,8 +1,8 @@
 Model & Train Data & ibo & kin & sna \\
 \hline
-XLM-R           & Target language                & 72.21 & 89.08 & 79.51 \\
-                & Fon                            & 38.66 & 44.23 & 41.95 \\
-                & Combined four languages        & 75.63 & 93.59 & 84.37 \\
-afrolm          & Target language                & 77.61 & 95.03 & 86.88 \\
-                & Fon                            & 31.82 & 35.68 & 31.94 \\
-                & Combined four languages        & 77.82 & 96.88 & 88.46 \\
+XLM-R           & Target language                & 72.21\% & 89.08\% & 79.51\% \\
+                & Fon                            & 38.66\% & 44.23\% & 41.95\% \\
+                & Combined four languages        & 75.63\% & 93.59\% & 84.37\% \\
+afrolm          & Target language                & 77.61\% & 95.03\% & 86.88\% \\
+                & Fon                            & 31.82\% & 35.68\% & 31.94\% \\
+                & Combined four languages        & 77.82\% & 96.88\% & 88.46\% \\

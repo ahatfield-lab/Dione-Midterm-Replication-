@@ -89,7 +89,7 @@ for model in models:
             match = sub_df[sub_df["Test_Lang"] == test_lang]
             if not match.empty:
                 accuracy = match["Accuracy"].values[0] * 100
-                accuracies.append(f"{accuracy:.2f}")
+                accuracies.append(f"{accuracy:.2f}\%")
             else:
                 accuracies.append("-")
 
