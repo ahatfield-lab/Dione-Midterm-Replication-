@@ -17,16 +17,7 @@ Dione-Midterm-Replication-/
 │   ├── XLM-R/                  
 │   ├── AfroLM/                
 │   ├── figures/               
-│   └── tables/                
+│   └── tables/
+├── data_processing.py
+├── data_postprocessing.ipynb               
 └── README.md                 # This file
-```
-
-## Citation
-```bibtex
-@article{dione2023masakhapos,
-  title={Masakhapos: Part-of-speech tagging for typologically diverse african languages},
-  author={Dione, Cheikh M Bamba and Adelani, David and Nabende, Peter and Alabi, Jesujoba and Sindane, Thapelo and Buzaaba, Happy and Muhammad, Shamsuddeen Hassan and Emezue, Chris Chinenye and Ogayo, Perez and Aremu, Anuoluwapo and others},
-  journal={arXiv preprint arXiv:2305.13989},
-  year={2023}
-}
-```bibtex
