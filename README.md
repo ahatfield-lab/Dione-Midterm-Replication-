@@ -7,11 +7,11 @@ Languages" by Dione et al. The project focuses on training and evaluating multil
 ```
 Dione-Midterm-Replication-/
 ├── data/                      # Dataset files and preprocessing scripts
-│   ├── ibo/                   # 
-│   ├── kin/                   #
-│   ├── sna/                   #
-│   ├── fon/                   #
-│   └── all_languages          #
+│   ├── ibo/                    
+│   ├── kin/                   
+│   ├── sna/                   
+│   ├── fon/                   
+│   └── all_languages          
 ├── paper_data/                # Original txt dataset files
 ├── results/                    
 │   ├── XLM-R/                  
@@ -21,3 +21,9 @@ Dione-Midterm-Replication-/
 ├── data_processing.py
 ├── data_postprocessing.ipynb               
 └── README.md                 # This file
+```
+
+## Models
+This replication includes:
+- Multilingual model:XLM-R
+- Afro-centric models: AfroLM
