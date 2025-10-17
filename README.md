@@ -14,9 +14,12 @@ Dione-Midterm-Replication-/
 │   └── all_languages          
 ├── paper_data/                # Original txt dataset files
 ├── results/                    
-│   ├── XLM-R/                  
+│   ├── XLM-R/
+│   │   ├── configs
+│   │   ├── predictions
+│   │   ├── results                    
 │   ├── AfroLM/
-│   │   ├── config
+│   │   ├── configs
 │   │   ├── predictions
 │   │   ├── results            
 │   ├── figures/               
