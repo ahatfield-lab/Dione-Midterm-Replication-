@@ -1,0 +1,38 @@
+exp: TokenClassification
+
+mode: 
+    - evaluate
+    - analyze
+
+models: 
+    hf_token_classification_model:
+        - ../cosc426/Dione-Midterm-Replication-/XLM_kin
+
+datafpath: ../cosc426/Dione-Midterm-Replication-/data/kin/processed_test.tsv
+
+predfpath: ../cosc426/Dione-Midterm-Replication-/predictions/kin_kin_pred.tsv
+
+resultsfpath: ../cosc426/Dione-Midterm-Replication-/results/kin_kin_result.tsv
+
+id2label:
+    0: X
+    1: ADJ
+    2: ADP
+    3: ADV
+    4: AUX
+    5: CCONJ
+    6: DET
+    7: INTJ
+    8: NOUN
+    9: NUM
+    10: PART
+    11: PRON
+    12: PROPN
+    13: PUNCT
+    14: SCONJ
+    15: SYM
+    16: VERB
+
+save: by_tokentype, by_cond
+
+device: cuda

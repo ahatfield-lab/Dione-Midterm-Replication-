@@ -1,0 +1,43 @@
+exp: TokenClassification
+
+mode: 
+    - train
+
+models: 
+    hf_token_classification_model:
+        - FacebookAI/xlm-roberta-base
+
+trainfpath: ../cosc426/Dione-Midterm-Replication-/data/ibo/processed_train.jsonl
+
+validfpath: ../cosc426/Dione-Midterm-Replication-/data/ibo/processed_dev.jsonl
+
+modelfpath: ../cosc426/Dione-Midterm-Replication-/XLM_ibo
+
+tagsLabel: tags
+
+tokensLabel: tokens
+
+LoadPretrained: True
+
+numLabels: 17
+
+id2label:
+    0: X
+    1: ADJ
+    2: ADP
+    3: ADV
+    4: AUX
+    5: CCONJ
+    6: DET
+    7: INTJ
+    8: NOUN
+    9: NUM
+    10: PART
+    11: PRON
+    12: PROPN
+    13: PUNCT
+    14: SCONJ
+    15: SYM
+    16: VERB
+
+device: cuda
