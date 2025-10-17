@@ -1,0 +1,2 @@
+	model	micro-precision	micro-recall	micro-f1	macro-precision	macro-recall	macro-f1	accuracy
+0	/home/ahatfield/midtermreplication/afrolm_ibo_model	0.7761445344498044	0.7761445344498044	0.7761445344498044	0.5613336393916999	0.612111843417654	0.5535744696954068	0.7761445344498044
